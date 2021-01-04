@@ -30,10 +30,10 @@ public class ClientInterface {
 
         System.out.println("╔══════════════════════════ MENU ══════════════════════════╗");
         System.out.println("║  1. add change                                           ║");
-        System.out.println("║                                                          ║");
-        for(Drink d : dispenser.getContent.values());{
-            System.out.println("║ "+d.getName()+"                                       "+d.getPrice()+"                 ║");
-        }
+        System.out.println("║  2. flush change                                         ║");
+        this.dispenser.getContent().values().forEach(d -> {
+            System.out.println("║  "+d.getName()+ " ".repeat(45-d.getName().length()) + d.getPrice() + " ".repeat(11 - String.valueOf(d.getPrice()).length()) + "║");
+        });
         System.out.println("║                                                          ║");
         System.out.println("║                                                          ║");
         System.out.println("║                                                          ║");
@@ -53,10 +53,37 @@ public class ClientInterface {
 
     }
 
+    public String addChange(){
+
+        System.out.println("╔══════════════════════════ MENU ══════════════════════════╗");
+        System.out.println("║  1. 1 euro                                               ║");
+        System.out.println("║  2. 50 cents                                             ║");
+        System.out.println("║                                                          ║");
+        System.out.println("║  0. cancel                                               ║");
+        System.out.println("╚══════════════════════════════════════════════════════════╝");
+        
+        try {
+            String choix = this.scan.nextLine();
+            return choix;
+        } catch (Exception e) {
+
+            return "";
+
+        }
+
+    }
+
+    public void buyingDrink(Drink can){
+        System.out.println("Here comes your can of "+can.getName());
+    }
+
     public void closeScan() {
 
         this.scan.close();
 
     }
 
+    public void message(String message){
+        System.out.println(message);
+    }
 }

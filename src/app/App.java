@@ -4,7 +4,6 @@ import view.ClientInterface;
 import model.Dispenser;
 import model.Drink;
 import controller.DispenserController;
-import java.util.HashMap;
 
 public class App{
 
@@ -18,6 +17,7 @@ public class App{
         this.dispenser.addDrink(new Drink("Coffee",1.5f));
 
         this.view = new ClientInterface(this.dispenser);
+        this.view.eraseConsole();
 
         this.menu = new DispenserController(this.dispenser, this.view);
 
@@ -30,12 +30,12 @@ public class App{
 
         while(running){
 
-            running = this.menuControleur.menu();
-            this.vue.effacerConsole();
+            running = this.menu.menu();
+            this.view.eraseConsole();
 
         }
 
-        this.vue.closeScan();
+        this.view.closeScan();
 
     }
 

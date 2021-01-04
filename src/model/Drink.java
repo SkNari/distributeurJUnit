@@ -23,7 +23,7 @@ public class Drink{
         this.price = p;
     }
 
-    public String getPrice(){
+    public float getPrice(){
         return this.price;
     }
 

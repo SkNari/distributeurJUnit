@@ -18,21 +18,56 @@ public class DispenserController{
 
     public boolean menu()
     {   
-        String choix = this.vue.afficherMenu();
-        boolean rep;
-        this.vue.effacerConsole();
-        if(choix.equal("0"))
+        String choix = this.view.displayDispenser();
+        this.view.eraseConsole();
+        if(choix.equals("0"))
             return false;
-        else if(choix.equal("1")){
-            System.out.println("addingChange");
+        else if(choix.equals("1")){
+            this.addChange();
+            return true;
+        }else if(choix.equals("2")){
+            float change = this.dispenser.giveChange();
+            this.view.message("The dispenser is returning "+change+" euros of change");
+            this.view.waitForUser();
         }
         else{
 
-            System.out.println(choix);
+            if(this.dispenser.getContent().containsKey(choix)){
+                Drink can = this.dispenser.pay(choix);
+                if(can != null){
+                    this.view.buyingDrink(can);
+                    this.view.waitForUser();
+                    return true;
+                }else{
+                    this.view.message("You don't have enough change to buy "+choix);
+                    this.view.waitForUser();
+                }
+            }else{
+                this.view.message(choix+" is not a valid choice");
+                this.view.waitForUser();
+            }
 
         }
+        return true;
     }
 
+    public boolean addChange(){
+
+        String choix = this.view.addChange();
+        this.view.eraseConsole();
+        if(choix.equals("0"))
+            return false;
+        else if(choix.equals("1")){
+            this.dispenser.addCoin(1.0f);
+            return true;
+        }else if(choix.equals("2")){
+            this.dispenser.addCoin(0.5f);
+            return true;
+        }else{
+            return this.addChange();
+        }
+
+    }
 
 
 
