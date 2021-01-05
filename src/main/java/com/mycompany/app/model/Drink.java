@@ -6,6 +6,7 @@ public class Drink{
     private float price;
     public Drink(String n,float p){
 
+        if(p <= 0) throw new IllegalArgumentException("Drink price must be superior to 0");
         this.name = n;
         this.price = p;
 

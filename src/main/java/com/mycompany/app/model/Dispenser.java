@@ -33,7 +33,11 @@ public class Dispenser{
 
     public void addCoin(float coin){
 
-        this.change+=coin;
+        if(coin>0){
+            this.change+=coin;
+        }else{
+            throw new IllegalArgumentException("Change must be superior to 0");
+        }
 
     }
 
