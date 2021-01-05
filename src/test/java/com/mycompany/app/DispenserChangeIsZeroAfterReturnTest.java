@@ -11,7 +11,7 @@ public class DispenserChangeIsZeroAfterReturnTest{
     public void changeIsZeroAfterReturningChange()
     {   
         Dispenser dispenser = new Dispenser();
-        dispenser.addCoin(5.0f);
+        dispenser.addChange(5.0f);
         float expectedChangeInDispenser = 0.0f;
 
         dispenser.giveChange();

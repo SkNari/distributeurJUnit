@@ -11,7 +11,7 @@ public class AddingChangeTest{
     public void addingChange()
     {   
         Dispenser dispenser = new Dispenser();
-        dispenser.addCoin(5.0f);
+        dispenser.addChange(5.0f);
 
         Assertions.assertEquals(5.0f,dispenser.getChange());
     }

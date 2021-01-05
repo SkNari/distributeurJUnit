@@ -12,7 +12,7 @@ public class AddZeroChangeToDispenserTest{
     {   
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             Dispenser dispenser = new Dispenser();
-            dispenser.addCoin(0.0f);
+            dispenser.addChange(0.0f);
         });
     }
 

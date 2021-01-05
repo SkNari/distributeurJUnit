@@ -17,7 +17,7 @@ public class DispenserReturnChangeTest
     public void returnChange()
     {   
         Dispenser dispenser = new Dispenser();
-        dispenser.addCoin(5.0f);
+        dispenser.addChange(5.0f);
         float expectedChange = dispenser.getChange();
 
         Assertions.assertEquals(expectedChange, dispenser.giveChange());

@@ -33,7 +33,7 @@ public class DispenserController{
         else{
 
             if(this.dispenser.getContent().containsKey(choix)){
-                Drink can = this.dispenser.pay(choix);
+                Drink can = this.dispenser.giveDrink(choix);
                 if(can != null){
                     this.view.buyingDrink(can);
                     this.view.waitForUser();
@@ -58,10 +58,10 @@ public class DispenserController{
         if(choix.equals("0"))
             return false;
         else if(choix.equals("1")){
-            this.dispenser.addCoin(1.0f);
+            this.dispenser.addChange(1.0f);
             return true;
         }else if(choix.equals("2")){
-            this.dispenser.addCoin(0.5f);
+            this.dispenser.addChange(0.5f);
             return true;
         }else{
             return this.addChange();

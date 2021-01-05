@@ -1,7 +1,7 @@
 package model;
 import java.util.HashMap;
 
-public class Dispenser{
+public class Dispenser implements DispenserInterface{
 
     private float change;
     private HashMap<String,Drink> content;
@@ -31,10 +31,10 @@ public class Dispenser{
         this.content = content;
     }
 
-    public void addCoin(float coin){
+    public void addChange(float change){
 
-        if(coin>0){
-            this.change+=coin;
+        if(change>0){
+            this.change+=change;
         }else{
             throw new IllegalArgumentException("Change must be superior to 0");
         }
@@ -55,7 +55,7 @@ public class Dispenser{
 
     }
 
-    public Drink pay(String drinkName){
+    public Drink giveDrink(String drinkName){
 
         if(this.content.containsKey(drinkName)){
             Drink drink = this.content.get(drinkName);

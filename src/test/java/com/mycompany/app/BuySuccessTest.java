@@ -13,9 +13,9 @@ public class BuySuccessTest{
     {   
         Dispenser dispenser = new Dispenser();
         dispenser.addDrink(new Drink("Coca Cola",10.0f));
-        dispenser.addCoin(10.0f);
+        dispenser.addChange(10.0f);
 
-        Drink drink = dispenser.pay("Coca Cola");
+        Drink drink = dispenser.giveDrink("Coca Cola");
 
         Assertions.assertEquals(drink.getName(),"Coca Cola");
     }

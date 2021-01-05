@@ -13,7 +13,6 @@ public class AddDrinkToDispenserTest{
     {   
         Dispenser dispenser = new Dispenser();
         Drink newDrink = new Drink("Ginger ale",2.0f);
-        float expectedChangeInDispenser = 0.0f;
 
         dispenser.addDrink(newDrink);
 

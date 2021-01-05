@@ -13,9 +13,9 @@ public class BuyUnavailableDrinkTest{
     {   
         Dispenser dispenser = new Dispenser();
         dispenser.addDrink(new Drink("Coca Cola",10.0f));
-        dispenser.addCoin(10.0f);
+        dispenser.addChange(10.0f);
 
-        Drink drink = dispenser.pay("Tea");
+        Drink drink = dispenser.giveDrink("Tea");
 
         Assertions.assertNull(drink,"The drink should be null because Tea is not available in the dispenser");
     }
