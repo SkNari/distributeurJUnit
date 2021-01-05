@@ -1,8 +1,8 @@
-package controller;
+package com.mycompany.app.controller;
 
-import model.Drink;
-import model.Dispenser;
-import view.ClientInterface;
+import com.mycompany.app.model.Drink;
+import com.mycompany.app.model.Dispenser;
+import com.mycompany.app.view.ClientInterface;
 
 public class DispenserController{
 

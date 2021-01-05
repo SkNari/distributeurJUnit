@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import model.Dispenser;
+import com.mycompany.app.model.Dispenser;
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;

@@ -1,7 +1,7 @@
-package view;
+package com.mycompany.app.view;
 import java.util.Scanner;
-import model.Dispenser;
-import model.Drink;
+import com.mycompany.app.model.Dispenser;
+import com.mycompany.app.model.Drink;
 
 public class ClientInterface {
 

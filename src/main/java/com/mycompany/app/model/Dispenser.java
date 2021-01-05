@@ -1,4 +1,11 @@
-package model;
+/**
+ * Representation of a dispenser
+ * 
+ * @author lucas augusto
+ * @version 3.0
+ */
+
+package com.mycompany.app.model;
 import java.util.HashMap;
 
 public class Dispenser implements DispenserInterface{

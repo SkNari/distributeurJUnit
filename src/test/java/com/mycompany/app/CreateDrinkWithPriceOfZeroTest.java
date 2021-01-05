@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import model.Drink;
+import com.mycompany.app.model.Drink;
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import app.App;
+import com.mycompany.app.app.App;
 
 public class Main
 {
