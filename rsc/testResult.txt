@@ -1,0 +1,36 @@
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mycompany.app.DispenserChangeIsZeroAfterReturnTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in com.mycompany.app.DispenserChangeIsZeroAfterReturnTest
+[INFO] Running com.mycompany.app.BuyUnavailableDrinkTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.mycompany.app.BuyUnavailableDrinkTest
+[INFO] Running com.mycompany.app.BuySuccessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.mycompany.app.BuySuccessTest
+[INFO] Running com.mycompany.app.AddZeroChangeToDispenserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.mycompany.app.AddZeroChangeToDispenserTest
+[INFO] Running com.mycompany.app.AddNegativeChangeToDispenserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.mycompany.app.AddNegativeChangeToDispenserTest
+[INFO] Running com.mycompany.app.CreateDrinkWithNegativePriceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.mycompany.app.CreateDrinkWithNegativePriceTest
+[INFO] Running com.mycompany.app.DispenserReturnChangeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.mycompany.app.DispenserReturnChangeTest
+[INFO] Running com.mycompany.app.AddDrinkToDispenserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.mycompany.app.AddDrinkToDispenserTest
+[INFO] Running com.mycompany.app.AddingChangeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.mycompany.app.AddingChangeTest
+[INFO] Running com.mycompany.app.CreateDrinkWithPriceOfZeroTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.mycompany.app.CreateDrinkWithPriceOfZeroTest
+[INFO] Running com.mycompany.app.NotEnoughChangeToBuyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.mycompany.app.NotEnoughChangeToBuyTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.079 s
+[INFO] Finished at: 2021-01-06T18:52:02+01:00
+[INFO] ------------------------------------------------------------------------

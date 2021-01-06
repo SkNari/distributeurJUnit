@@ -36,8 +36,9 @@ public class DispenserController{
                 Drink can = this.dispenser.giveDrink(choix);
                 if(can != null){
                     this.view.buyingDrink(can);
+                    this.view.message("The dispenser is returning "+this.dispenser.giveChange()+" euros of change");
                     this.view.waitForUser();
-                    return true;
+                    return true;    
                 }else{
                     this.view.message("You don't have enough change to buy "+choix);
                     this.view.waitForUser();
